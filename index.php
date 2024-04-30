@@ -66,7 +66,7 @@ $matches = [
         "ospitePunti" => 30
     ]
 ];
-var_dump($matches);
+//var_dump($matches);
 ?>
 <?php
 //SNACK 2
@@ -124,6 +124,14 @@ $posts = [
     ],
 ];
 ?>
+<?php
+//SNACK 4
+/*
+Creare un array con 15 numeri casuali, tenendo conto che l’array 
+non dovrà contenere lo stesso numero più di una volta.
+*/
+$numbers = array();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -174,6 +182,18 @@ $posts = [
             echo $value[0]['author'] . "<br>";
             echo $value[0]['text'] . "<br><br>";
             //echo print_r($value);
+        }
+        ?>
+    </section>
+    <section>
+        <h2>Snack 4</h2>
+        <?php
+        for($i = 0; $i < 15; $i++) {
+            $number = rand(1, 100);
+            if(!in_array($number, $numbers)) {
+                $numbers[] = $number;
+                echo $number . "<br>";
+            }
         }
         ?>
     </section>
