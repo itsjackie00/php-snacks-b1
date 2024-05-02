@@ -88,7 +88,7 @@ $matches = [
         <nav>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="snack-1.php">Snack-1</a>
@@ -105,7 +105,7 @@ $matches = [
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="container mt-4 ">
         <ul class="list-group">
         <?php
         foreach ($matches as $match) {
